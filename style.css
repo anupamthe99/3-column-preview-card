@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.sedans{
+    height: 60vh;
+    width: 35vh;
+    background-color: rgb(227,134,35);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+.img{
+    height: 20vh;
+    position:relative;
+    top: 70px;
+    left: 50px;
+}
+img{
+    height: 7vh;
+}
+h2{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color: white;
+}
+.inner-text{
+    margin-left:50px;
+    margin-right: 50px;
+    margin-bottom:70px ;
+    font-size: 16px;
+    color: white;
+}
+button{
+    margin-left: 50px;
+    height: 5vh;
+    width: 18vh;
+    border-radius: 4vh;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Hover button */
+   .sedans button:hover{
+        background-color: rgb(227,134,35);
+        border: 4px solid white;
+        color: white;
+    }
+    .suvs button:hover{
+        background-color: rgb(49,106,114);
+        border: 4px solid white;
+        color: white;
+    }
+    .luxury button:hover{
+        background-color: rgb(29,65,64);
+        border: 4px solid white;
+        color: white;
+    }
+.sedans button{
+    color:rgb(227,134,35); 
+}
+.suvs{
+    height: 60vh;
+    width: 35vh;
+    background-color: rgb(49,106,114);
+}
+.suvs button{
+    color:rgb(49,106,114);
+}
+.luxury{
+    height: 60vh;
+    width: 35vh;
+    background-color: rgb(29,65,64);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.luxury button{
+    color:rgb(29,65,64);
+}
+
+/* media query for responsive design */
+
+@media (max-width:1200px) {
+    body{
+        padding: 10px;
+        display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+    }
+    .sedans{
+        height: 100vh;
+        width: 60vh;
+    }
+    .suvs{
+        height: 100vh;
+        width: 60vh;
+
+    }
+    .luxury{
+        height: 100vh;
+        width: 60vh;
+
+    }
+}
